@@ -1,4 +1,4 @@
-PINTEREST
+PINTEREST ( first backend project )
 
 1. Routs
 - index
