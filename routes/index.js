@@ -11,12 +11,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 // profile page
-router.get("/profile", isLoggedIn, function(req, res){
-  res.render('profile')
+router.get("/profile", isLoggedIn, async function(req, res){
+  const user = await userModel.findOne({
+    username: req.session.passport.user
+  })
+  res.render('profile', {user})
 })
 // login page
 router.get("/login", function(req, res){
-  res.render('login')
+  res.render('login', {error: req.flash('error')})
 })
 // feed page
 router.get("/feed", function(req, res){
@@ -44,7 +47,8 @@ router.post('/register', function (req, res) {
 // login
 router.post('/login', passport.authenticate("local", {
   successRedirect: "/profile",
-  failureRedirect: '/login'
+  failureRedirect: '/login',
+  failureFlash: true
 }));
 
 // logout

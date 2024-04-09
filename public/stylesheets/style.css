@@ -124,3 +124,10 @@ hr {
   opacity: 0.4;
   margin-left: 25%;
 }
+
+.error{
+  font-weight: 500;
+  color: #df0812;
+  text-transform: capitalize;
+  margin: 7px;
+}
