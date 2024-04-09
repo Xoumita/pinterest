@@ -10,6 +10,8 @@ Routs
 DataModels
 - user
 
-Sign up / Log in  
+Sign up / Log in 
+
 Flash massages of wrong info while logging in
+
 Log out
