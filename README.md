@@ -40,3 +40,8 @@ This project represents my initial foray into backend development, aiming to cre
 3. Set up MongoDB and configure database connection.
 4. Run the server using `npm start`.
 5. Access the application through a web browser at the specified URL.
+Sign up / Log in 
+
+Flash massages of wrong info while logging in
+
+Log out
