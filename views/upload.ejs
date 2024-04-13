@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload Form</title>
+<link rel="stylesheet" href="/stylesheets/upload.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Upload File</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="text" name="caption" placeholder="Write a caption">
+    <button type="submit">Upload</button>
+  </form>
+</div>
+
+</body>
+</html>
